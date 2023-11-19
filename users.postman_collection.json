@@ -1,0 +1,157 @@
+{
+	"info": {
+		"_postman_id": "03b34af7-7090-4d2d-be80-fea1ff25df49",
+		"name": "users",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json"
+	},
+	"item": [
+		{
+			"name": "Create User",
+			"request": {
+				"method": "POST",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Breaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhYnJpemloYXdtaWQ2MzZpNzZAZ21haWwuY29tIiwiZnVsTmFtZSI6IkhhbWlkIFRhYnJpemkiLCJpZCI6IjY1NTUyZWMyZTY1NmE4MzVjNzk0Yzc0ZCIsIkNsYWltcyI6eyJleHAiOjE3MDAwODEzNjZ9fQ.FzCp0RCVJuccxqGz1iA_0J7pRjjCdYN8ZOF3_8JVFLo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n    \"name\": \"hamid\",\n    \"gender\": \"male\",\n    \"age\": 27\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get All Users",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Breaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhYnJpemloYXdtaWQ2MzZpNzZAZ21haWwuY29tIiwiZnVsTmFtZSI6IkhhbWlkIFRhYnJpemkiLCJpZCI6IjY1NTUyZWMyZTY1NmE4MzVjNzk0Yzc0ZCIsIkNsYWltcyI6eyJleHAiOjE3MDAwODEzNjZ9fQ.FzCp0RCVJuccxqGz1iA_0J7pRjjCdYN8ZOF3_8JVFLo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":\"tabrizihamid6367@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/users",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Get User By ID",
+			"protocolProfileBehavior": {
+				"disableBodyPruning": true
+			},
+			"request": {
+				"method": "GET",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Breaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhYnJpemloYXdtaWQ2MzZpNzZAZ21haWwuY29tIiwiZnVsTmFtZSI6IkhhbWlkIFRhYnJpemkiLCJpZCI6IjY1NTUyZWMyZTY1NmE4MzVjNzk0Yzc0ZCIsIkNsYWltcyI6eyJleHAiOjE3MDAwODEzNjZ9fQ.FzCp0RCVJuccxqGz1iA_0J7pRjjCdYN8ZOF3_8JVFLo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":\"tabrizihamid6367@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/users/655a6155ece3d640483c093d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"655a6155ece3d640483c093d"
+					]
+				}
+			},
+			"response": []
+		},
+		{
+			"name": "Delete User By ID",
+			"request": {
+				"method": "DELETE",
+				"header": [
+					{
+						"key": "Content-Type",
+						"name": "Content-Type",
+						"value": "application/json",
+						"type": "text"
+					},
+					{
+						"key": "Authorization",
+						"value": "Breaer eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJlbWFpbCI6InRhYnJpemloYXdtaWQ2MzZpNzZAZ21haWwuY29tIiwiZnVsTmFtZSI6IkhhbWlkIFRhYnJpemkiLCJpZCI6IjY1NTUyZWMyZTY1NmE4MzVjNzk0Yzc0ZCIsIkNsYWltcyI6eyJleHAiOjE3MDAwODEzNjZ9fQ.FzCp0RCVJuccxqGz1iA_0J7pRjjCdYN8ZOF3_8JVFLo",
+						"type": "text"
+					}
+				],
+				"body": {
+					"mode": "raw",
+					"raw": "{\n\"email\":\"tabrizihamid6367@gmail.com\"\n}"
+				},
+				"url": {
+					"raw": "http://localhost:9000/users/655a6155ece3d640483c093d",
+					"protocol": "http",
+					"host": [
+						"localhost"
+					],
+					"port": "9000",
+					"path": [
+						"users",
+						"655a6155ece3d640483c093d"
+					]
+				}
+			},
+			"response": []
+		}
+	]
+}
